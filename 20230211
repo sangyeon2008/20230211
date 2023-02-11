@@ -1,0 +1,43 @@
+# def solution(babbling):
+#     answer = 0
+#     can = ["aya,'ye", "woo","ma"]
+#     for b in babbling:
+#         bab = b
+#         for c in can:
+#             if c*2 in bab:
+#                 break
+#             if c in bab:
+#                 bab =bab.replce(c,'1')
+#         if bab.isdigit():
+#             answer += 1
+#     return answer
+#
+# babbling = ["ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"]
+# print(solution(babbling))
+
+
+
+# n=int(input())
+#
+# command = []
+# for _ in range(n):
+#     string = input()
+#     if len(command) ==0:
+#         command = list(string)
+#     else:
+#         for i in range(len(string)):
+#             if string[i] != command[i]:
+#                 command[i] = "?"
+# print(''.join(command))
+
+
+
+
+#백준     숫자 정사각형  1051
+n,m  = map(int,input().split()) #
+matrix = []
+for i in range(n):
+    tmp = list(map(int,list(input())))
+    matrix.append(tmp)
+    if n > m:
+        matrix[m][m]
